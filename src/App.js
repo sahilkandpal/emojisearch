@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import Header from "./components/Header/Header";
+import SearchBar from "./components/SearchBar/SearchBar";
+import EmojiList from "./components/EmojiList/EmojiList";
+import Toast from "./components/Toast/Toast";
+import { EmojiContextProvider } from "./context/emojiContext";
+import { ToastContextProvider } from "./context/toastContext";
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <EmojiContextProvider>
+        <SearchBar />
+        <ToastContextProvider>
+          <EmojiList />
+          <Toast />
+        </ToastContextProvider>
+      </EmojiContextProvider>
     </div>
   );
-}
+};
 
 export default App;

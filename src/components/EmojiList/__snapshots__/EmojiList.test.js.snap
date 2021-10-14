@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given EmojiList when loading is true component should render loading text 1`] = `
+<styled.div>
+  <h1
+    className="loading"
+  >
+    ⏳
+  </h1>
+</styled.div>
+`;
+
+exports[`Given EmojiList when result is found component should render emojilist 1`] = `
+<styled.div>
+  <div
+    className="emoji"
+    key="😀"
+    onClick={[Function]}
+  >
+    😀
+  </div>
+</styled.div>
+`;
+
+exports[`Given EmojiList when result is not found component should render no result 1`] = `
+<styled.div>
+  <h1
+    className="notfound"
+  >
+    <div
+      className="notfound-emoji"
+    >
+      😭
+    </div>
+    <div
+      className="notfound-text"
+    >
+      No Results
+    </div>
+  </h1>
+</styled.div>
+`;

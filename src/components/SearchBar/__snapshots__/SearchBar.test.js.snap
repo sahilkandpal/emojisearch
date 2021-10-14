@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given Input Search bar should render properly 1`] = `
+<styled.div>
+  <div
+    className="search"
+  >
+    <input
+      autoFocus={true}
+      className="search-input"
+      data-testid="search-input"
+      onChange={[Function]}
+      placeholder="Search"
+      type="text"
+      value=""
+    />
+    <div
+      className="cross-icon"
+      data-testid="cross-icon"
+      onClick={[Function]}
+    >
+      ❌
+    </div>
+  </div>
+</styled.div>
+`;

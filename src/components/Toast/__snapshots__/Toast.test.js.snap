@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given Input Toast should visible on isVisible true 1`] = `
+<styled.div
+  isVisible={true}
+>
+  <h4>
+    😢 copied!
+  </h4>
+</styled.div>
+`;
+
+exports[`Given Input Toast shouldn't be visible on isVisible false 1`] = `
+<styled.div
+  isVisible={false}
+>
+  <h4 />
+</styled.div>
+`;
